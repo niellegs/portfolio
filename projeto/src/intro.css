@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "Helvetica93";
+    src: url("../public/font/Helvetica\ Neue\ LT\ Std\ 93\ Black\ Extended.otf");
+
+    font-family: "Helvetica85";
+    src: url("../public/font/HELVETICA\ NEUE\ LT\ STD\ 85\ HEAVY.OTF");
+}
+
+@font-face {
+    font-family: "Helvetica75";
+    src: url("../public/font/HELVETICA\ NEUE\ LT\ STD\ 75\ BOLD.OTF");
+
+    font-family: "Helvetica67";
+    src: url("../public/font/HELVETICA\ NEUE\ LT\ STD\ 67\ MEDIUM\ CONDENSED.OTF");
+}
+
+:root {
+    --black: #21241D;
+    --red: #D94D29;
+    --orange: #C25E3E;
+    --lightPurple: #6D25C5;
+    --purple: #452976;
+    --green: #BBC682;
+}
+
+/* NAV */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    /* overflow-x: hidden; */
+}
+
+.intro-container {
+    background-color: var(--black);
+    width: 100vw;
+    height: auto;
+    margin-top: 32vh;
+}
+
+nav {
+    width: 100vw;
+    margin-left: 100px;
+}
+
+nav ul {
+    display: flex;
+    font-family: "Helvetica85";
+    font-size: 20px;
+    padding-top: 20px;
+    margin: 0  2vw;
+    color: var(--red);
+}
+
+nav li {
+    padding: 20px 100px;
+    list-style-type: none;
+    border: var(--red) 1px solid;
+    cursor: pointer;
+}
+
+nav li:hover {
+    color: var(--lightPurple);
+    background-color: black;
+}
+
+/* SOBRE MIM */
+
+
+.aboutMe h1 {
+    font-family: "Helvetica85";
+    color: transparent;
+    -webkit-text-stroke: var(--red) 1px;
+    font-size: 55px;
+    margin: 90px 150px;
+}
+
+.aboutMe-container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.textContainer {
+    display: block;
+    margin: 20px 50px;
+}
+
+#photo {
+    background-color: var(--lightPurple);
+    width: 378px;
+    height: 458px;
+    margin-left: -5vw;
+}
+
+#aboutMe-text {
+    width: 679px;
+    height: 335px;
+    font-family: "Helvetica67";
+    font-size: 18px;
+    margin-bottom: 20px;
+    border: rgb(109, 109, 109) 2px solid;
+    padding: 10px;
+}
+
+#aboutMe-text p {
+    padding: 10px;
+}
+
+#orangePhoto {
+    background-color: var(--orange);
+    width: 679px;
+    height: 80px;
+}
+
+#colorfulLine {
+    width: 100vw;
+    height: 50px;
+    background: linear-gradient(90deg,var(--lightPurple), var(--red), var(--orange));
+    margin-bottom: 50px;
+    animation: .5s color linear infinite;
+}
+
+.cls-1 {
+    fill: none;
+    stroke: #6d25c5;
+    stroke-miterlimit: 10;
+    stroke-width: 2.5px;
+}
+
+svg {
+    width: 150px;
+}
+@keyframes color {
+    0% {
+        background: linear-gradient(90deg,var(--lightPurple), var(--red), var(--orange));
+    } 50% {
+        background: linear-gradient(90deg, var(--red), var(--orange), var(--lightPurple)) ;
+    } 100% {
+        background: linear-gradient(90deg, var(--orange), var(--lightPurple), var(--red));
+    }
+}
