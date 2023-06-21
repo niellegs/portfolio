@@ -77,7 +77,7 @@ nav li:hover {
 /* SOBRE MIM */
 
 
-.aboutMe h1 {
+h1 {
     font-family: "Helvetica85";
     color: transparent;
     -webkit-text-stroke: var(--red) 1px;
@@ -126,7 +126,7 @@ nav li:hover {
 
 #colorfulLine {
     width: 100vw;
-    height: 50px;
+    height: 20px;
     background: linear-gradient(90deg,var(--lightPurple), var(--red), var(--orange));
     margin-bottom: 50px;
     animation: .5s color linear infinite;
@@ -142,6 +142,48 @@ nav li:hover {
 svg {
     width: 150px;
 }
+
+/* PROJETOS */
+
+#projects-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.projects {
+    border: var(--orange) solid 2px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 15px;
+}
+
+.projects a {
+    text-decoration: none;
+    color: transparent;
+}
+
+.projects img {
+    width: auto;
+    height: 300px;
+}
+
+.projects h2{
+    color: var(--orange);
+    font-family: "Helvetica85";
+    margin-bottom: 10px;
+}
+
+.projects p {
+    color: white;
+    font-family: "Helvetica67";
+}
+
+.projects:hover {
+    transform: scale(110%);
+}
+
+
 @keyframes color {
     0% {
         background: linear-gradient(90deg,var(--lightPurple), var(--red), var(--orange));

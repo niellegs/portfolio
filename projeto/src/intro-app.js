@@ -1,6 +1,20 @@
 import "./intro.css"
 
 function Intro() {
+    const projects = [
+        {link: "#", img: '../images/iconiconi.png', title:"NOTHING HERE, MAN", description:"Ops! Parece que esse projeto não saiu do VScode ainda."},
+        {link: "#", img: '../images/iconiconi.png', title:"NOTHING HERE, MAN", description:"Ops! Parece que esse projeto não saiu do VScode ainda."},
+        {link: "#", img: '../images/iconiconi.png', title:"NOTHING HERE, MAN", description:"Ops! Parece que esse projeto não saiu do VScode ainda."}
+    ];
+    const listProjects = projects.map(projects =>
+        <div className="projects">
+            <a href={ projects.link }>
+                <img src={projects.img } />
+                <h2>{projects.title}</h2> 
+                <p>{projects.description}</p>
+            </a>
+        </div>
+) ;
     return (
         <div className="intro-container">
             <nav>
@@ -36,8 +50,11 @@ function Intro() {
         </div>
 
         <div id="colorfulLine"></div>
-
-        
+        <h1>PROJETOS</h1>
+            <div id="projects-container">
+                {listProjects}
+            </div>
+            
         </div>
         
     )
