@@ -132,15 +132,30 @@ h1 {
     animation: .5s color linear infinite;
 }
 
-.cls-1 {
-    fill: none;
-    stroke: #6d25c5;
-    stroke-miterlimit: 10;
-    stroke-width: 2.5px;
+svg {
+    height:60px;
+    width: auto;
+    float: right;
+    transform: translate(-17rem, -9rem);
+}
+svg:hover {
+    cursor: pointer;
+    filter: hue-rotate(90deg);
+    transition: 0.3s ease-in;
 }
 
-svg {
-    width: 150px;
+.cls-1 {
+    fill:none;
+    font-size: 100px;
+    stroke:#6d25c5;
+    stroke-miterlimit:10;
+    stroke-width:2.5px;
+}
+
+.cls-2 {
+    font-size:46px;
+    fill:#6d25c5;
+    font-family:"Helvetica85";
 }
 
 /* PROJETOS */
@@ -156,6 +171,7 @@ svg {
     text-align: center;
     margin-bottom: 100px;
     padding: 15px;
+    transition: 0.2s ease-in;
 }
 
 .projects a {
@@ -182,6 +198,7 @@ svg {
 .projects:hover {
     transform: scale(110%);
 }
+
 
 
 @keyframes color {

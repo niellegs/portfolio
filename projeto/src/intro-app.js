@@ -36,23 +36,23 @@ function Intro() {
                     <div id='orangePhoto'></div>
                 </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 456.53 115.51">
-                        <defs>
-                        <style>
-                        </style>
-                        </defs>
-                        <g id="Camada_2" data-name="Camada 2">
-                        <g id="HOME">
-                        <polygon class="cls-1" points="454.93 57.76 410.53 2.01 409.24 3.62 1.25 3.62 1.25 111.89 409.24 111.89 410.53 113.51 454.93 57.76"/>
-                        </g>
-                        </g>
-                </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 456.53 115.51">
+            <defs>
+            </defs>
+            <g id="Camada_2" data-name="Camada 2">
+            <g id="HOME">
+            <polygon class="cls-1" points="454.93 57.76 410.53 2.01 409.24 3.62 1.25 3.62 1.25 111.89 409.24 111.89 410.53 113.51 454.93 57.76"/>
+            <text class="cls-2" transform="translate(122.86 76.59)">VER MAIS</text>
+            </g></g>
+            </svg>
         </div>
 
         <div id="colorfulLine"></div>
         <h1>PROJETOS</h1>
             <div id="projects-container">
                 {listProjects}
+                
             </div>
             
         </div>
