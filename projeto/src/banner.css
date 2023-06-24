@@ -75,3 +75,62 @@ body {
         text-shadow: #D94D29 0px 0px 10px ;
     }
 }
+
+/* DESKTOP */
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .social-media {
+        margin-left: 50px;
+    }
+}
+
+/* LANDSCAPE */
+
+@media screen and (max-width: 1023px) and (min-width: 900px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .social-media {
+        margin-left: 50px;
+    }
+}
+
+/* PORTRAIT */
+
+@media screen and (max-width: 899px) and (min-width: 768px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .social-media {
+        margin-left: 70px;
+    }
+}
+
+/* SMARTPHONE ZONE */
+
+@media screen and (max-width: 719px) and (min-width: 480px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+    
+    .social-media {
+        margin-left: 8rem;
+    }
+
+    .social-media img {
+        height: 50px;
+    }
+}

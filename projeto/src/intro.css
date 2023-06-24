@@ -38,6 +38,7 @@ body {
     width: 100vw;
     height: 100vh;
     color: white;
+    background-color: var(--black);
     /* overflow-x: hidden; */
 }
 
@@ -209,4 +210,389 @@ svg:hover {
     } 100% {
         background: linear-gradient(90deg, var(--orange), var(--lightPurple), var(--red));
     }
+}
+
+/* DESKTOP */
+@media screen and (max-width: 1280px) and (min-width: 1024px) {
+    /* NAVEGAÇÃO */
+    nav {
+        margin-left: 3rem;
+        width: 90vw;
+    }
+    nav ul {
+        font-size: 1rem;
+        padding-top: 2rem;
+    }
+
+    nav li {
+        padding: 1.5rem 4rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin: 4rem 5rem;
+    }
+
+    /* ABOUT ME */
+
+    #photo {
+        width: 20rem;
+        height: 26rem;
+        margin-left: -6rem;
+    }
+    
+    #aboutMe-text {
+        width: 600px;
+        height: 315px;
+    }
+    
+    #orangePhoto {
+        width: 600px;
+        height: 60px;
+    }
+    
+    #colorfulLine {
+        width: 100vw;
+        height: 2vh;
+    }
+    
+    svg {
+        transform: translate(-4rem, -7rem);
+    }
+
+    /* PROJETOS */
+    
+    .projects {
+        padding: 15px;
+        margin: 20px;
+    }
+    
+    .projects img {
+        width: auto;
+        height: 200px;
+    }
+    
+    
+    .projects:hover {
+        transform: scale(110%);
+    }
+}
+
+/* LANDSCAPE */
+
+@media screen and (max-width: 1023px) and (min-width: 900px) {
+      /* NAVEGAÇÃO */
+      nav {
+        margin-left: 3rem;
+        width: 90vw;
+    }
+    nav ul {
+        font-size: 1rem;
+        padding-top: 2rem;
+    }
+
+    nav li {
+        padding: 1.5rem 3.3rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin: 4rem 5rem;
+    }
+
+    /* ABOUT ME */
+
+    #photo {
+        width: 18rem;
+        height: 26rem;
+        margin-left: 2rem;
+    }
+    
+    #aboutMe-text {
+        width: 25rem;
+        height: 315px;
+    }
+    
+    #orangePhoto {
+        width: 25rem;
+        height: 60px;
+    }
+    
+    #colorfulLine {
+        width: 100vw;
+        height: 2vh;
+    }
+    
+    svg {
+        transform: translate(-4rem, -7rem);
+    }
+    
+        /* PROJETOS */
+        
+        .projects {
+            padding: 15px;
+            margin: 12px;
+        }
+        
+        .projects img {
+            width: auto;
+            height: 180px;
+        }
+        
+        
+        .projects:hover {
+            transform: scale(110%);
+        }
+    
+}
+
+/* PORTRAIT */
+
+@media screen and (max-width: 899px) and (min-width: 768px) {
+          /* NAVEGAÇÃO */
+          nav {
+            margin-left: 2.5rem;
+            width: 90vw;
+        }
+        nav ul {
+            font-size: 1rem;
+            padding-top: 2rem;
+        }
+    
+        nav li {
+            padding: 1.5rem 2.4rem;
+        }
+    
+        h1 {
+            font-size: 3rem;
+            margin: 4rem 5rem;
+        }
+    
+        /* ABOUT ME */
+    
+        #photo {
+            width: 18rem;
+            height: 26rem;
+            margin-left: 2rem;
+        }
+        
+        #aboutMe-text {
+            width: 25rem;
+            height: 315px;
+        }
+        
+        #orangePhoto {
+            width: 25rem;
+            height: 60px;
+        }
+        
+        #colorfulLine {
+            width: 100vw;
+            height: 2vh;
+        }
+        
+        svg {
+            transform: translate(-4rem, -7rem);
+        }
+        
+            /* PROJETOS */
+            
+            .projects {
+                width: 12.8rem;
+                padding: 10px;
+                margin: 7px;
+            }
+
+            .projects h2 {
+                font-size: 1.2rem;
+            }
+            
+            .projects img {
+                width: auto;
+                height: 9rem;
+            }
+            
+            
+            .projects:hover {
+                transform: scale(110%);
+            }
+        
+}
+
+/* SMARTPHONE ZONE */
+
+@media screen and (max-width: 719px) and (min-width: 480px) {
+            body {
+
+                
+            }
+              /* NAVEGAÇÃO */
+              nav {
+                margin-left: 0rem;
+                width: 100vw;
+            }
+            nav ul {
+                padding-top: 2rem;
+                font-size: 0.8rem;
+            }
+        
+            nav li {
+                padding: 1.2rem .5rem;
+            }
+        
+            h1 {
+                font-size: 2rem;
+                margin: 4rem 5rem;
+            }
+
+            
+        
+            /* ABOUT ME */
+        
+            #photo {
+                width: 15rem;
+                height: 32rem;
+                margin-left: 2rem;
+            }
+            
+            #aboutMe-text {
+                font-size: 1rem;
+                width: 14rem;
+                height: 26rem;
+            }
+            
+            #orangePhoto {
+                width: 14rem;
+                height: 60px;
+            }
+
+            svg {
+                height:2.5rem;
+                width: auto;
+                float: right;
+                transform: translate(-17rem, -15rem);
+                margin-top: 30px;
+            }
+            
+            #colorfulLine {
+                width: 100vw;
+                height: 2vh;
+            }
+            
+            svg {
+                transform: translate(-4rem, -7rem);
+            }
+            
+                /* PROJETOS */
+
+                #projects-container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+                .projects {
+                    width: 18rem;
+                    height: 20rem;
+                    padding: 15px;
+                    margin-bottom: 2rem;
+                }
+                
+                .projects img {
+                    width: auto;
+                    height: 10rem;
+                }
+                
+                
+                .projects:hover {
+                    transform: scale(110%);
+                }
+}
+
+/* FIRST GEN */
+
+@media screen and (max-width: 419px) and (min-width: 320px) {
+    nav {
+        margin-left: 0rem;
+        width: 100vw;
+    }
+    nav ul {
+        padding-top: 2rem;
+        font-size: 0.8rem;
+    }
+
+    nav li {
+        padding: 1.2rem .5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin: 4rem 5rem;
+    }
+
+    
+
+    /* ABOUT ME */
+
+    #photo {
+        width: 15rem;
+        height: 32rem;
+        margin-left: 2rem;
+    }
+    
+    #aboutMe-text {
+        font-size: 1rem;
+        width: 14rem;
+        height: 26rem;
+    }
+    
+    #orangePhoto {
+        width: 14rem;
+        height: 60px;
+    }
+
+    svg {
+        height:2.5rem;
+        width: auto;
+        float: right;
+        transform: translate(-17rem, -15rem);
+        margin-top: 30px;
+    }
+    
+    #colorfulLine {
+        width: 100vw;
+        height: 2vh;
+    }
+    
+    svg {
+        transform: translate(-4rem, -7rem);
+    }
+    
+        /* PROJETOS */
+
+        #projects-container {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .projects {
+            width: 18rem;
+            height: 20rem;
+            padding: 15px;
+            margin-bottom: 2rem;
+        }
+        
+        .projects img {
+            width: auto;
+            height: 10rem;
+        }
+        
+        
+        .projects:hover {
+            transform: scale(110%);
+        }
+    
+}
+/* LOW RESOLUTION */
+@media screen and (max-width: 319) {
+    
 }

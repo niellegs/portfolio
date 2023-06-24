@@ -1,4 +1,5 @@
-import "./intro.css"
+import "./intro.css";
+import React, { useState } from 'react';
 
 function Intro() {
     const projects = [
@@ -6,7 +7,7 @@ function Intro() {
         {link: "#", img: '../images/iconiconi.png', title:"NOTHING HERE, MAN", description:"Ops! Parece que esse projeto não saiu do VScode ainda."},
         {link: "#", img: '../images/iconiconi.png', title:"NOTHING HERE, MAN", description:"Ops! Parece que esse projeto não saiu do VScode ainda."}
     ];
-    const listProjects = projects.map(projects =>
+    const listProjects = projects.map(projects => 
         <div className="projects">
             <a href={ projects.link }>
                 <img src={projects.img } />
@@ -15,16 +16,31 @@ function Intro() {
             </a>
         </div>
 ) ;
+
+const [show404, setShow404] = useState(false);
+const load404 = () => {
+    setShow404(true);
+  };
+
     return (
         <div className="intro-container">
-            <nav>
-                <ul>
-                    <li>HOME</li>
-                    <li><a>SOBRE MIM</a></li>
-                    <li><a>PROJETOS</a></li>
-                    <li><a>CONTATE-ME</a></li>
-                </ul>
-            </nav>
+              <nav>
+        <ul>
+          <li onClick={() => setShow404(false)}>HOME</li>
+          <li onClick={ load404 }><a >SOBRE MIM</a></li>
+          <li><a>PROJETOS</a></li>
+          <li><a>CONTATE-ME</a></li>
+      </ul>
+    </nav>
+    {show404 ? (
+      <div>
+        <div>
+          <h1>Are you lost babygirl?</h1>
+        </div>
+      </div>
+    ) : (
+      <div id="output">
+            <div id="output">
          <div className="aboutMe">
             <h1>SOBRE MIM</h1>
             <div className="aboutMe-container">
@@ -54,10 +70,13 @@ function Intro() {
                 {listProjects}
                 
             </div>
-            
+
         </div>
-        
-    )
+      </div>
+    )}
+  </div>
+);
+
     
 };
 
