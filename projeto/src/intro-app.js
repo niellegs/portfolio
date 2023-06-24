@@ -10,7 +10,7 @@ function Intro() {
     const listProjects = projects.map(projects => 
         <div className="projects">
             <a href={ projects.link }>
-                <img src={projects.img } />
+                <img src={projects.img } alt="imagem do projeto"/>
                 <h2>{projects.title}</h2> 
                 <p>{projects.description}</p>
             </a>
