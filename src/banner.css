@@ -134,3 +134,24 @@ body {
         height: 2rem;
     }
 }
+
+/* FIRST GEN */
+
+@media screen and (max-width: 419px) and (min-width: 320px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+    
+    .social-media {
+        margin-left: 8rem;
+    }
+
+    .social-media img {
+        height: 2rem;
+    }
+}
