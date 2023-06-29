@@ -1,3 +1,4 @@
+import "./404.css";
 import "./intro.css";
 import React, { useState } from 'react';
 
@@ -33,9 +34,13 @@ const load404 = () => {
       </ul>
     </nav>
     {show404 ? (
-      <div>
-        <div>
-          <h1>Are you lost babygirl?</h1>
+      <div id="ErrorContainer">
+        <div className="Error">
+          <div class="ErrorHeader">
+            <img src="../images/world.svg"></img>
+            <h1>ERROR 404: ARE YOU LOST, BABYGIRL?</h1>
+          </div>
+          <p>Ei, calma lá, transeunte. Esse estabelecimento só abre de segunda à sexta, das 9:00 às 18:00. Ás vezes abre às 12:00. Ás vezes ,15:00. Ás vezes nem abre.</p>
         </div>
       </div>
     ) : (
