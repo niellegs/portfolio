@@ -23,7 +23,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    border: 1px solid var(--lightPurple);
     align-items: center;
     text-align: center;
     transform: translate(15rem, 0);
@@ -54,4 +54,26 @@
     width: 43vw;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+/* SMARTPHONE ZONE */
+@media screen and (max-width: 719px) and (min-width: 480px) {
+    .Error {
+        transform: translate(1.2rem, 0);    
+    }
+    .Error h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* FIRST GEN */
+
+@media screen and (max-width: 419px) and (min-width: 320px) {
+    .Error {
+        transform: translate(1.9rem, 0);    
+    }
+    .Error h1 {
+        font-size: 1rem;
+        padding: .5rem;
+    }
 }
