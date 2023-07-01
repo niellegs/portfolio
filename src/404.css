@@ -64,13 +64,17 @@
     .Error h1 {
         font-size: 1.5rem;
     }
+
+    .Error p {
+        font-size: 1.3rem;
+    }
 }
 
 /* FIRST GEN */
 
 @media screen and (max-width: 419px) and (min-width: 320px) {
     .Error {
-        transform: translate(3rem, 0);    
+        transform: translate(4rem, 0);    
     }
     .Error h1 {
         font-size: 1rem;
