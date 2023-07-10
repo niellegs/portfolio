@@ -83,7 +83,7 @@ h1 {
     color: transparent;
     -webkit-text-stroke: var(--red) 1px;
     font-size: 55px;
-    margin: 90px 150px;
+    margin: 90px 160px;
 }
 
 .aboutMe-container {
@@ -99,7 +99,7 @@ h1 {
 }
 
 #photo {
-    background-color: var(--lightPurple);
+    background: url("../public/images/photo2.png") center;
     width: 378px;
     height: 458px;
     margin-left: -5vw;
